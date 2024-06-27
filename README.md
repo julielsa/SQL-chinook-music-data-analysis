@@ -8,6 +8,7 @@ The Chinook database represents a digital media store, including tables for arti
 1. Data Understanding: Reviewed the structure of the Chinook database, which includes tables for artists, albums, media tracks, invoices, and customers.
 2. Objective Definition: To evaluate employee performance, analyze customer and market trends, and catalog insights.
 3. Query Formulation:
+
    Crafted specific SQL queries to extract relevant data for analysis:
     -  Customers (full names, customer ID, and country) not in the US.
     -  Customers specifically from Brazil and then invoices for customers from Brazil.
@@ -17,7 +18,7 @@ The Chinook database represents a digital media store, including tables for arti
     -  Show the Invoice Total, Customer name, Country, and Sales Agent name for all invoices and customers.
     -  Identify purchased track names with each invoice line ID.
     -  Identify the purchased track name AND artist name with each invoice line ID.
-4. Data Extraction and Analysis:
+5. Data Extraction and Analysis:
      - Executed the SQL queries to retrieve and analyze the data.
      - Interpreted the results to draw meaningful insights.
 
@@ -40,7 +41,8 @@ These SQL skills collectively enable complex data retrieval and manipulation, al
 - Complex Joins: Combining multiple tables using various join operations
 - Column Selection and Formatting: Selecting specific columns and renaming them for clarity
 
-### Results 
+### Results & Recommendation
+#### Results
 --Show Customers (their full names, customer ID, and country) who are not in the US. 
 ```
 SELECT customerid
@@ -129,7 +131,7 @@ LEFT JOIN chinook.artists ar
 ON ar.ArtistID=a.ArtistID;
 ```
 
-### Recommendations
+#### Recommendations
 1. Market Expansion and Customer Trends:
      - Focus marketing efforts on countries with growing customer bases outside the US.
      - Develop targeted marketing campaigns for Brazilian customers based on their purchasing patterns and preferences.
